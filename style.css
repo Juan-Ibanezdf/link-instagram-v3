@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --bg-color: #edf2ff;
+  --text-color: #00082f;
+  --primary-color: #4263eb;
+  --primary-color-dark: #364fc7;
+}
+
+a {
+  text-decoration: none;
+}
+
+body.blue-dark {
+  --bg-color: #00082f;
+  --text-color: #edf2ff;
+}
+
+body.pink {
+  background: #fff0f6;
+  --bg-color: #fff0f6;
+  --primary-color: #d6336c;
+  --primary-color-dark: #a61e4d;
+}
+
+body.pink-dark {
+  background: #1f000b;
+  --bg-color: #1f000b;
+  --primary-color: #d6336c;
+  --primary-color-dark: #a61e4d;
+  --text-color: #fff0f6;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  text-align: center;
+  width: 350px;
+  margin: 60px auto;
+  padding: 0px 40px;
+}
+
+img {
+  width: 100%;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 3.7px;
+  border: var(--primary-color) solid 4px;
+}
+
+.email {
+  text-decoration: none;
+  color: var(--primary-color);
+  margin-top: 5px;
+}
+
+.user img {
+  height: 25px;
+  width: 25px;
+  padding-right: 0.5rem;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.username {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  opacity: 0.8;
+  font-size: 15px;
+  margin-bottom: 24px;
+  color: var(--text-color);
+}
+
+h1 {
+  font-size: 32px;
+  margin-top: 16px;
+  margin-bottom: 5px;
+  color: var(--text-color);
+}
+
+.info {
+  text-align: justify;
+  color: var(--text-color);
+  margin-bottom: 7px;
+}
+
+fieldset {
+  border-radius: 5px;
+  padding: 5px;
+}
+
+legend {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+}
+.input {
+  justify-content: center;
+  align-items: center;
+  margin-right: 1px;
+  margin-bottom: 5px;
+}
+
+ul {
+  list-style: none;
+  margin: 20px 0;
+}
+.estilo img {
+  height: 25px;
+  width: 25px;
+  padding-right: 0.5rem;
+}
+
+.estilo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 53px;
+  background-color: var(--primary-color);
+  text-transform: uppercase;
+  font-size: 14px;
+
+  margin-bottom: 16px;
+  border-radius: 6px;
+  transition: background 400ms;
+  color: var(--bg-color);
+}
+
+ul li a:hover {
+  background: var(--primary-color-dark);
+}
+
+footer {
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 0.6;
+
+  transition: background 400ms;
+}
+
+footer:hover {
+  opacity: 1;
+}
+
+footer {
+  color: var(--text-color);
+}
+
+footer p {
+  padding-bottom: 5px;
+}
